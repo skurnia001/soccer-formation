@@ -264,7 +264,6 @@ def formation(form_data_file, frame_segment_file):
     sims_arr = np.zeros((segment_ids.shape[0] - 1, len(forms_label)*2, 3))
     # TODO: finish the formation
     for i, df_segment in enumerate(df.groupby('segment_id')):
-        print(df_segment[0])
         if df_segment[0] == -1:
             continue
 
